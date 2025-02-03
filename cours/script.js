@@ -50,3 +50,16 @@ fetch("https://api.blablagues.net/?rub=blagues").then((resp)=>resp.json())
     console.log(blague.data);
     
 })
+
+
+
+// const myHeaders = new Headers();
+// const init = {
+//     method: "GET",
+//     headers:myHeaders,
+//     mode:"cors",
+//     cache:"default",
+// }
+// fetch("http://facebook.com", init)
+ 
+// .then((res) => console.log(res));
