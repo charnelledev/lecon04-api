@@ -14,7 +14,7 @@ xhr.onload = reqlistener;
 //Envoyer la requete
 xhr.send();
 
-//gerer les erreur du resaux
+//gerer les erreur du resa
 xhr.onerror = ()=>{};
 
 
@@ -47,7 +47,7 @@ xhr.send()
 
 fetch("https://api.blablagues.net/?rub=blagues").then((resp)=>resp.json())
 .then((blague)=>{
-    console.log(blague.data);
+    // console.log(blague.data);
     
 })
 
@@ -74,7 +74,7 @@ const nombres = [1,3,5,7,9];
 const double = nombres.map(
    (nombres )=> nombres*2);
 
-console.log(double);
+// console.log(double);
 
 
 
@@ -102,5 +102,5 @@ const description = utilisateur.map(user => `${user.prenom} a ${user.age}ans`);
 
 const descriptString = description.join('\n')
 
-console.log(descriptString );
+// console.log(descriptString );
 
