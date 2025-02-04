@@ -63,3 +63,44 @@ fetch("https://api.blablagues.net/?rub=blagues").then((resp)=>resp.json())
 // fetch("http://facebook.com", init)
  
 // .then((res) => console.log(res));
+
+
+//  let produits = [,saucisse,beure,chocolat];
+//  console.log(produits);
+
+
+
+const nombres = [1,3,5,7,9];
+const double = nombres.map(
+   (nombres )=> nombres*2);
+
+console.log(double);
+
+
+
+
+
+
+//  const utilisateur = [
+//     {prenom:"maiva",age:16},
+//     {prenom:"ange",age:17},
+//     {prenom:"merveille",age:18},
+//  ];
+
+//  const description = utilisateur.map(utilisateur => `${utilisateur.prenom} a ${utilisateur.age}ans`);
+
+//  console.log(description);
+
+
+const utilisateur = [
+   {prenom:"maiva",age:16},
+   {prenom:"ange",age:17},
+   {prenom:"merveille",age:18},
+];
+
+const description = utilisateur.map(user => `${user.prenom} a ${user.age}ans`);
+
+const descriptString = description.join('\n')
+
+console.log(descriptString );
+
