@@ -1,7 +1,14 @@
 {
-    "posts":[
-     {
-        "name": "Evaa"
-     }
-    ]
+  "posts": [
+    {
+      "id": "c4ae",
+      "pseudo": "rostodev",
+      "message": "Hello world!"
+    },
+    {
+      "id": "12aa",
+      "pseudo": "rostodev",
+      "message": "Hello world!"
+    }
+  ]
 }

@@ -9,7 +9,7 @@ let xhr = new XMLHttpRequest();
 xhr.open('GET',"api",true);
 
 //definir ce qui se passe lorsque la reponce est recue
-xhr.onload = reqlistener;
+// xhr.onload = reqlistener;
 
 //Envoyer la requete
 xhr.send();
@@ -19,16 +19,16 @@ xhr.onerror = ()=>{};
 
 
 
-let xhr = new XMLHttpRequest();
+// let xhr = new XMLHttpRequest();
 xhr.open('Get', 'https://api.blablagues.net/?rub=blagues', true);
 
 
 xhr.onload = function(){
     if (xhr.status>=200 && xhr.status<300){
 
-        console.log(xhr.responseText);
+        // console.log(xhr.responseText);
     }else{
-        console.error("Error",responseText);
+        // console.error("Error",responseText);
     }
 
 }
@@ -103,4 +103,88 @@ const description = utilisateur.map(user => `${user.prenom} a ${user.age}ans`);
 const descriptString = description.join('\n')
 
 // console.log(descriptString );
+
+
+
+
+
+
+const init2 = {
+    // method: "POST",
+    method: "DELETE",
+    headers: {
+    "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+    pseudo: "rostodev",
+    message: "Hello world!",
+    }),
+    mode: "cors",
+    credentials: "same-origin",
+    };
+    document.querySelector('form').addEventListener('submit', () => {
+        fetch("http://localhost:3000/posts/", init2)
+        .then(() => console.log('data envoyer'));
+    })
+    const Delete = document.querySelector('Delete')
+    Delete.addEventListener('Delete', () =>{
+        fetch("http://localhost:3000/posts/", init2)
+        .then(() => console.log('data envoyer'));
+    })
+
+
+
+
+
+
+
+
+
+
+// Asynchrone
+//-----------------
+// **1
+
+
+
+
+setInterval(() => {
+// console.log("text");
+}, 2000);
+
+
+
+
+//**2
+// Promise
+
+
+
+
+
+
+// fetch("mon lien").then((res)=> res)
+// async/await
+async function fecthData() {
+await fectch('monlien')
+// attend que le await soit exécuté avant de faire la suite
+executeFonction();
+}
+
+
+
+
+const fecthData2 =assync ()=>{
+   await  fetch("mon lien")
+    executeFonction();
+}
+
+user  
+
+
+
+
+
+
+
 
