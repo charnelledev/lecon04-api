@@ -174,12 +174,11 @@ executeFonction();
 
 
 
-const fecthData2 =assync ()=>{
-   await  fetch("mon lien")
-    executeFonction();
-}
+// const fecthData2 = assync () => {
+//    await  fectch("monlien")
+//     executeFonction();
+// }
 
-user  
 
 
 
