@@ -19,10 +19,15 @@ const userDisplay = async () =>{
     document.body.innerHTML = userData.map(
         (user)=>
          `
+        <div class="card">
+        <img src="${user.picture.large}" alt=" la   photo de ${user.name.last}" />
          <h4>${user.name.last} </h4>
-
+         <p> ${user.location.city}, ${user.dob.date}</p>
+         <i> Membre depuis ${user.registered
+            .date}
+         </div>
          `
         
-    ).join("\n")
+    ).join("")
 }
 userDisplay()
